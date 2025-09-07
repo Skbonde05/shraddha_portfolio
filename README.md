@@ -1,5 +1,5 @@
 
-<h1 align="center">🏠 Shraddha Bonde – Personal Portfolio</h1>
+<h1 align="center">Shraddha Bonde – Personal Portfolio</h1>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue" alt="License"></a>
@@ -69,3 +69,19 @@ Crafted using **HTML, CSS, and JavaScript**, the site focuses on **simple design
 - Consider a **Dark Mode** toggle for user preference  
 
 ---
+## 🖼️ Screenshots  
+
+### 🏠 Homepage  
+<p align="center">
+  <img src="website_photos/1.png" alt="Homepage" width="800"/>
+</p>  
+
+### 📂 Certificates Section  
+<p align="center">
+  <img src="website_photos/2.png" alt="Projects Section" width="800"/>
+</p>  
+
+### 📱 Projects 
+<p align="center">
+  <img src="website_photos/3.png" alt="Mobile View" width="800"/>
+</p>  
