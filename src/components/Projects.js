@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/vois.png";
 import projImg2 from "../assets/img/dk robotics.png";
 import projImg3 from "../assets/img/splashscreen.jpeg";
+import projImg4 from "../assets/img/projImg4.png";
 
 import bg from "../assets/img/bg4.jpg";
 import "animate.css";
@@ -23,6 +24,12 @@ export const Projects = () => {
       liveLink: "https://dkrobotics-website.web.app",
     },
     {
+      title: "Vibe Commerce: Mock E-Com",
+      description: "MERN Stack E-Commerce Application",
+      imgUrl: projImg4,
+      liveLink: "https://e-com-git-main-shraddha-bondes-projects.vercel.app/",
+    },
+    {
       title: "PolyStuff App",
       description: "Polytechic Notes App",
       imgUrl: projImg3,
@@ -39,6 +46,7 @@ export const Projects = () => {
         require("../assets/img/8.jpeg"),
       ],
       isApp: true, 
+      liveLink: "https://play.google.com/store/apps/details?id=myapp.org.userapp&pcampaignid=web_share",
     },
   ];
 

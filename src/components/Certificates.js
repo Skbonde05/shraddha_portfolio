@@ -18,6 +18,8 @@ import projImg11 from "../assets/img/leadership.jpeg";
 import projImg12 from "../assets/img/cpp.jpeg";
 import projImg13 from "../assets/img/Agile.jpeg";
 import projImg14 from "../assets/img/GEN AI.JPG";
+import projImg15 from "../assets/img/GSSOC.jpeg";
+import projImg16 from "../assets/img/gfg.jpeg";
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -31,6 +33,11 @@ export const Certificates = () => {
       imgUrl: projImg1,   
     },
     {
+      title: "GSSOC 2025",
+      description: "Contributed to GSSOC 2025",
+      imgUrl: projImg15,
+    },
+    {
       title: "DK Robotics Internship",
       description: "Web-application",
       imgUrl: projImg2,
@@ -39,11 +46,6 @@ export const Certificates = () => {
       title: "Pursullence Internship",
       description: "Agile Learn Six Sigma Yellow Belt",
       imgUrl: projImg3,
-    },
-    {
-      title: "MotionCut Internship",
-      description: "Frontend Web Development Intern",
-      imgUrl: projImg4,
     },
     {
       title: "Postman API",
@@ -58,6 +60,11 @@ export const Certificates = () => {
   ];
 
   const project2 = [
+    {
+      title: "MotionCut Internship",
+      description: "Frontend Web Development Intern",
+      imgUrl: projImg4,
+    },
     {
       title: "FutureTech Innovations Challenge",
       description: "National Level Project Competition",
@@ -83,11 +90,6 @@ export const Certificates = () => {
       description: "Gen AI Workshop by NXTWave",
       imgUrl: projImg11,
     },
-    {
-      title: "CPP Certification",
-      description: " C++ Programming Certification by Spoken Tutorial",
-      imgUrl: projImg12,
-    },
   ];
 
   const project3 = [
@@ -101,6 +103,16 @@ export const Certificates = () => {
       description: "GENAI 101 with Pieces of Code",
       imgUrl: projImg14,
       texturl: "Click here for live demo ",
+    },
+    {
+      title: "CPP Certification",
+      description: " C++ Programming Certification by Spoken Tutorial",
+      imgUrl: projImg12,
+    },
+    {
+      title: "GFG Certification",
+      description: " Attended Geeks For Geeks Webinar on Data Structures and Algorithms",
+      imgUrl: projImg16,
     },
   ];
 
