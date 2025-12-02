@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/vois.png";
 import projImg2 from "../assets/img/dk robotics.png";
 import projImg3 from "../assets/img/splashscreen.jpeg";
 import projImg4 from "../assets/img/projImg4.png";
+import blog from "../assets/img/blog.png";
 
 import bg from "../assets/img/bg4.jpg";
 import "animate.css";
@@ -47,6 +48,12 @@ export const Projects = () => {
       ],
       isApp: true, 
       liveLink: "https://play.google.com/store/apps/details?id=myapp.org.userapp&pcampaignid=web_share",
+    },
+    {
+      title: "Blog Backend API Project",
+      description: "Node.js & Express.js Backend API",
+      imgUrl: blog,
+      liveLink: "https://documenter.getpostman.com/view/45790366/2sB3dMwW2u",
     },
   ];
 
