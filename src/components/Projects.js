@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/dk robotics.png";
 import projImg3 from "../assets/img/splashscreen.jpeg";
 import projImg4 from "../assets/img/projImg4.png";
 import blog from "../assets/img/blog.png";
+import qumail from "../assets/img/qumail.png";
 
 import bg from "../assets/img/bg4.jpg";
 import "animate.css";
@@ -12,6 +13,12 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const allProjects = [
+    {
+      title: "Qumail",
+      description: "Web-application",
+      imgUrl: qumail,
+      liveLink: "https://qumail-6oeb.vercel.app/",
+    },
     {
       title: "VOIS: Smart Voice Assistant for Laptop",
       description: "Web-application & VOIS Software",

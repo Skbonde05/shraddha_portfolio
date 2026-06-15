@@ -694,3 +694,161 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .app-carousel .carousel-indicators {
   display: none;
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 992px) {
+  nav.navbar a.navbar-brand {
+    width: auto;
+  }
+  .social-icon {
+    margin-left: 20px;
+  }
+  .navbar-text button {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .banner {
+    padding: 180px 0 80px 0;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+  .banner p {
+    width: 100%;
+  }
+  .project .nav.nav-pills {
+    width: 90%;
+  }
+  .project p {
+    width: 80%;
+  }
+  .newsletter-bx {
+    padding: 50px 60px;
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav.navbar a.navbar-brand {
+    width: auto;
+  }
+  .navbar-collapse {
+    background: #121212;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  .social-icon {
+    margin-left: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    padding: 140px 0 60px 0;
+  }
+  .banner h1 {
+    font-size: 38px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .about h1, .exp-title h1, .skill h2, .project h2, .contact h2 {
+    font-size: 32px;
+  }
+  .about p {
+    margin: 40px 20px;
+    font-size: 16px;
+  }
+  .skill-bx {
+    padding: 40px 20px;
+  }
+  .project p {
+    width: 100%;
+  }
+  .project .nav.nav-pills {
+    width: 100%;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  .project .nav.nav-pills .nav-item {
+    width: 100%;
+  }
+  .nav-link#projects-tabs-tab-first {
+    border-radius: 20px 20px 0 0;
+  }
+  .nav-link#projects-tabs-tab-second {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
+  }
+  .nav-link#projects-tabs-tab-third {
+    border-radius: 0 0 20px 20px;
+  }
+  .contact {
+    padding: 60px 0 100px 0;
+  }
+  .contact img {
+    margin-bottom: 40px;
+  }
+  .newsletter-bx {
+    padding: 40px 30px;
+    margin-top: 20px;
+  }
+  .new-email-bx {
+    flex-direction: column;
+    background: transparent;
+  }
+  .new-email-bx::before, .new-email-bx::after {
+    display: none;
+  }
+  .new-email-bx input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #4A2FBD;
+  }
+  .new-email-bx button {
+    width: 100%;
+    padding: 15px;
+  }
+  .footer img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  nav.navbar a.navbar-brand img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  nav.navbar a.navbar-brand h2 {
+    font-size: 1.2rem !important;
+  }
+  .banner h1 {
+    font-size: 32px;
+  }
+  .about h1, .exp-title h1, .skill h2, .project h2, .contact h2 {
+    font-size: 28px;
+  }
+  .proj-txtx h4 {
+    font-size: 22px;
+  }
+  .proj-txtx span {
+    font-size: 14px;
+  }
+  .proj-txtx a {
+    font-size: 16px;
+  }
+}

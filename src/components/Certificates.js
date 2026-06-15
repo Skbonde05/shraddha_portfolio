@@ -20,6 +20,11 @@ import projImg13 from "../assets/img/Agile.jpeg";
 import projImg14 from "../assets/img/GEN AI.JPG";
 import projImg15 from "../assets/img/GSSOC.jpeg";
 import projImg16 from "../assets/img/gfg.jpeg";
+import projImg17 from "../assets/img/ECWoC.jpeg";
+import projImg18 from "../assets/img/osc.jpg";
+import projImg19 from "../assets/img/sit.jpg";
+import projImg20 from "../assets/img/Wishlistz Certificate.jpeg";
+import projImg21 from "../assets/img/spoken.jpg";
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -28,19 +33,39 @@ export const Certificates = () => {
 
   const certificates = [
     {
-      title: "Dipex",
-      description: "Dipex-2025",
-      imgUrl: projImg1,   
-    },
-    {
       title: "GSSOC 2025",
       description: "Contributed to GSSOC 2025",
       imgUrl: projImg15,
     },
     {
+      title: "Dipex",
+      description: "Dipex-2025",
+      imgUrl: projImg1,   
+    },
+    {
+      title: "WishListz Internship",
+      description: "WishListz Internship",
+      imgUrl: projImg20,   
+    },
+    {
       title: "DK Robotics Internship",
       description: "Web-application",
       imgUrl: projImg2,
+    },
+    {
+      title: "ECWoC",
+      description: "ECWoC-2025",
+      imgUrl: projImg17,   
+    },
+    {
+      title: "Open Source Global Connect",
+      description: "Open Source Global Connect-2026",
+      imgUrl: projImg18,   
+    },
+    {
+      title: "SIT",
+      description: "SIT-ACM Portfolio Challenge 2026",
+      imgUrl: projImg19,   
     },
     {
       title: "Pursullence Internship",
@@ -108,6 +133,11 @@ export const Certificates = () => {
       title: "CPP Certification",
       description: " C++ Programming Certification by Spoken Tutorial",
       imgUrl: projImg12,
+    },
+    {
+      title: "RDBMS Certification",
+      description: " RDBMS Spoken Tutorial",
+      imgUrl: projImg21,
     },
     {
       title: "GFG Certification",

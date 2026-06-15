@@ -110,6 +110,33 @@ function Experience() {
             </p>
           </VerticalTimelineElement>
 
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Dec 2025-Feb 2026"
+            iconStyle={{ background: "#3e497a", color: "#fff" }}
+            // icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              MERN Stack Intern
+            </h3>
+            <h5>WishListz</h5>
+            <p>
+              ◦ Developed backend services for an AI-powered chatbot using Node.js and Express.js to handle real-time user interactions
+
+            </p>
+            <p>
+              ◦ Designed and implemented RESTful APIs to efficiently process user queries and chatbot responses
+            </p>
+            <p>
+              ◦ Integrated MongoDB for structured storage and fast retrieval of conversational data
+
+            </p>
+            <p>
+              ◦ Implemented intent handling logic to enhance chatbot response accuracy and improve user experience
+
+            </p>
+          </VerticalTimelineElement>
+
         </VerticalTimeline>
       </div>
     </>
