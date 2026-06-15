@@ -105,7 +105,11 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={bg} />
+      <img
+  className="background-image-right"
+  src={bg}
+  alt="Background"
+/>
     </section>
   );
 };

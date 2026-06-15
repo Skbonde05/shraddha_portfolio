@@ -11,17 +11,17 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const [, setIndex] = useState(1);
   const toRotate = [ "Mobile App Developer", "Web Developer"];
   const period = 2000;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  let ticker = setInterval(() => {
+    tick();
+  }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+  return () => clearInterval(ticker);
+}, [text, delta]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
