@@ -6,19 +6,19 @@ import headerImg from "../assets/img/bg3.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+const TO_ROTATE = [ "Mobile App Developer", "Web Developer"];
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
-  const toRotate = [ "Mobile App Developer", "Web Developer"];
   const period = 2000;
 
   useEffect(() => {
   const ticker = setInterval(() => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
+    let i = loopNum % TO_ROTATE.length;
+    let fullText = TO_ROTATE[i];
 
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
@@ -47,30 +47,6 @@ export const Banner = () => {
   return () => clearInterval(ticker);
 }, [text, delta, isDeleting, loopNum]);
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
 
   const onButtonClick = () => {
     const pdfUrl = "Shraddha-Bonde Resume.pdf"; // specify the path to your PDF file
