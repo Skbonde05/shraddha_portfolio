@@ -49,7 +49,7 @@ export const Banner = () => {
 
 
   const onButtonClick = () => {
-    const pdfUrl = "Shraddha-Bonde Resume.pdf"; // specify the path to your PDF file
+    const pdfUrl = "Shraddha_Bonde_Resume1.pdf";  
     window.open(pdfUrl, "_blank");
 };
 const onButtonClick1 = () => {

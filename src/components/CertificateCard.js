@@ -5,7 +5,7 @@ export const ProjectCard = ({ title, description, imgUrl, texturl, onClick }) =>
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col xs={12} sm={6} md={4}>
       <div
         className="proj-imgbx"
         onClick={onClick}

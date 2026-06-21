@@ -116,6 +116,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
+.nav-icon {
+  display: none;
+}
 span.navbar-text {
     /* display: flex; */
     align-items: center;
@@ -315,25 +318,103 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-/************ About Css ************/
-.about h4{
-  color: gray;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 40px;
+/************ About Section Css ************/
+.about-section {
+  padding: 60px 0;
+  position: relative;
 }
-.about h1{
-  margin-top: 40px;
-  font-size: 45px;
-	font-weight: 700;
-  text-align: center;
+
+.about-box {
+  background-image: url('./assets/img/color-sharp.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 15px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
-.about p{
-  color: gray;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 20px;
-  margin: 90px;
+
+.about-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ddd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+.about-text-container {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.about-text-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.about-text-container h1 span {
+  color: #3498db;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.about-divider {
+  border: none;
+  height: 3px;
+  background-color: #3498db;
+  margin: 15px 0;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.about-text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f1f1f1 !important;
+}
+
+.about-highlight {
+  color: #3498db;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .about-box {
+    padding: 40px 20px;
+  }
+  .about-img {
+    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+  }
+  .about-text-container {
+    text-align: center;
+    padding: 0;
+  }
+  .about-divider {
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img {
+    width: 220px;
+    height: 220px;
+  }
+  .about-text-container h1 {
+    font-size: 2rem;
+  }
+  .about-text-container p {
+    font-size: 1rem;
+  }
 }
 /************ Experiance Css ************/
 .experience{
@@ -732,19 +813,111 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar a.navbar-brand {
     width: auto;
   }
-  .navbar-collapse {
-    background: #121212;
-    padding: 20px;
+  nav.navbar a.navbar-brand img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  nav.navbar a.navbar-brand h2 {
+    font-size: 1.3rem !important;
+  }
+  nav.navbar .navbar-toggler {
+    z-index: 9999;
+    position: relative;
+  }
+  .navbar-collapse, .navbar-collapse.collapsing {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh !important;
+    background: rgba(18, 18, 18, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 100px 30px 40px 30px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 9998;
+    box-shadow: -10px 0 25px rgba(0, 0, 0, 0.5);
+    margin-top: 0 !important;
+    border-radius: 0;
+  }
+  .navbar-collapse.show {
+    right: 0;
+  }
+  .drawer-header {
     text-align: center;
-    border-radius: 10px;
-    margin-top: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .drawer-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .drawer-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+  .drawer-header p {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   .navbar-nav {
+    align-items: stretch;
+    width: 100%;
+  }
+  .nav-icon {
+    display: inline-block !important;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: #AA367C;
+    transition: transform 0.3s;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 14px 20px !important;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    opacity: 0.85;
+    text-align: left;
+    display: flex;
     align-items: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link:last-child {
+    border-bottom: none;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link:hover,
+  nav.navbar .navbar-nav .nav-link.navbar-link.active {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff !important;
+    opacity: 1;
+    padding-left: 28px !important;
+    border-left: 4px solid #AA367C;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link.active .nav-icon {
+    color: #fff;
+    transform: scale(1.15);
   }
   .social-icon {
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
   }
@@ -752,6 +925,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .banner {
     padding: 140px 0 60px 0;

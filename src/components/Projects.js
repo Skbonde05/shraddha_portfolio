@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/splashscreen.jpeg";
 import projImg4 from "../assets/img/projImg4.png";
 import blog from "../assets/img/blog.png";
 import qumail from "../assets/img/qumail.png";
+import streakify from "../assets/img/streakify.jpeg";
 
 import bg from "../assets/img/bg4.jpg";
 import "animate.css";
@@ -57,6 +58,22 @@ export const Projects = () => {
       liveLink: "https://play.google.com/store/apps/details?id=myapp.org.userapp&pcampaignid=web_share",
     },
     {
+      title: "Streakify App",
+      description: "Gamified Study Productivity App",
+      imgUrl: streakify,
+      imgUrls: [
+        require("../assets/img/streakify1.jpeg"),
+        require("../assets/img/streakify2.jpeg"),
+        require("../assets/img/streakify3.jpeg"),
+        require("../assets/img/streakify4.jpeg"),
+        require("../assets/img/streakify5.jpeg"),
+        require("../assets/img/streakify6.jpeg"),
+        require("../assets/img/streakify7.jpeg"),
+      ],
+      isApp: true, 
+      liveLink: "https://expo.dev/accounts/skbonde/projects/study-challenge/builds/84af0c5e-a66b-491f-9f87-4f28ec0f21fd",
+    },
+    {
       title: "Blog Backend API Project",
       description: "Node.js & Express.js Backend API",
       imgUrl: blog,
@@ -77,7 +94,7 @@ export const Projects = () => {
     >
       <Container>
         <Row>
-          <Col size={12}>
+          <Col xs={12}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
